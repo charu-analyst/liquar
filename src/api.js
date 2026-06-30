@@ -1,5 +1,6 @@
 const API_BASE = 'https://liquar-backend.vercel.app/api';
 
+
 // Helper to get auth header
 function getHeaders() {
   const token = localStorage.getItem('token');
