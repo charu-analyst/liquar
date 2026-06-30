@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-800 dark:bg-brand-darkBg dark:text-gray-100 font-sans antialiased overflow-x-hidden transition-colors duration-200;
+  }
+}
+
+/* Custom premium scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-brand-border rounded;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-blue-500;
+}
+
+/* Glassmorphism custom panels */
+.glass-panel {
+  @apply bg-white/70 border border-slate-200 backdrop-blur-md dark:bg-brand-panelBg/70 dark:border-brand-border;
+}
+
+.glass-panel-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.glass-panel-hover:hover {
+  @apply bg-white/90 border-blue-500/30 shadow-lg shadow-blue-500/5 dark:bg-brand-panelBg/95 dark:border-blue-500/30 dark:shadow-blue-500/10 -translate-y-0.5;
+}
+
+/* Glowing text and status points */
+.glow-accent {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+.glow-success {
+  text-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+}
+
+/* Hide default printing interface headers */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .glass-panel {
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+  }
+}
+
+.print-only {
+  display: none;
+}
+
+/* LIGHT THEME OVERRIDES FOR GLOBAL UTILITIES */
+html:not(.dark) {
+  --color-text-main: #1f2937; /* slate-800 */
+  --color-text-muted: #4b5563; /* slate-600 */
+}
+
+html:not(.dark) body {
+  background-color: #f8fafc !important; /* slate-50 */
+  color: #1e293b !important;
+}
+
+html:not(.dark) .glass-panel {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  border-color: rgba(203, 213, 225, 0.6) !important; /* slate-300 */
+  box-shadow: 0 4px 20px -2px rgba(148, 163, 184, 0.12) !important;
+}
+
+html:not(.dark) .glass-panel-hover:hover {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-color: rgba(59, 130, 246, 0.4) !important;
+  box-shadow: 0 10px 30px -4px rgba(59, 130, 246, 0.1) !important;
+}
+
+html:not(.dark) .bg-brand-darkBg {
+  background-color: #f1f5f9 !important; /* slate-100 */
+}
+
+html:not(.dark) .bg-brand-panelBg {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .bg-brand-panelBg\/50 {
+  background-color: rgba(248, 250, 252, 0.7) !important;
+}
+
+html:not(.dark) .bg-brand-darkBg\/30 {
+  background-color: rgba(241, 245, 249, 0.4) !important;
+}
+
+html:not(.dark) .border-brand-border {
+  border-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .border-brand-border\/40 {
+  border-color: rgba(226, 232, 240, 0.5) !important;
+}
+
+html:not(.dark) .text-gray-100 {
+  color: #0f172a !important; /* slate-900 */
+}
+
+html:not(.dark) .text-gray-200 {
+  color: #1e293b !important; /* slate-800 */
+}
+
+html:not(.dark) .text-gray-300 {
+  color: #334155 !important; /* slate-700 */
+}
+
+html:not(.dark) .text-gray-400 {
+  color: #475569 !important; /* slate-600 */
+}
+
+html:not(.dark) .text-brand-textMuted {
+  color: #64748b !important; /* slate-500 */
+}
+
+html:not(.dark) .text-brand-textActive {
+  color: #0f172a !important; /* slate-900 */
+}
+
+html:not(.dark) .hover\:text-brand-textActive:hover {
+  color: #3b82f6 !important;
+}
+
+html:not(.dark) .hover\:bg-brand-panelBg:hover {
+  background-color: #f1f5f9 !important;
+}
+
+html:not(.dark) .bg-brand-border {
+  background-color: #e2e8f0 !important;
+}
+
+html:not(.dark) .divide-brand-border\/40 > * + * {
+  border-color: rgba(226, 232, 240, 0.6) !important;
+}
+
+/* Tooltip and Chart overrides */
+html:not(.dark) .recharts-cartesian-grid-horizontal line,
+html:not(.dark) .recharts-cartesian-grid-vertical line {
+  stroke: #e2e8f0 !important;
+}
+
+html:not(.dark) .recharts-tooltip-wrapper .recharts-default-tooltip {
+  background-color: #ffffff !important;
+  border-color: #e2e8f0 !important;
+  color: #0f172a !important;
+}
