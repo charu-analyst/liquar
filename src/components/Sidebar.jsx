@@ -32,7 +32,7 @@ export default function Sidebar({ currentTab, setCurrentTab, user, onLogout, the
       <div className="lg:hidden w-full bg-brand-panelBg border-b border-brand-border h-16 flex items-center justify-between px-4 z-40 fixed top-0 left-0">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 rounded bg-blue-600 flex items-center justify-center font-bold text-white tracking-widest text-sm">LQ</div>
-          <span className="font-semibold text-lg bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Antigravity Liquor ERP</span>
+          <span className="font-semibold text-lg bg-gradient-to-r from-blue-400 to-indigo-400 bg-clip-text text-transparent">Kanpur Liquor ERP</span>
         </div>
         <button onClick={toggleSidebar} className="text-gray-400 hover:text-white focus:outline-none">
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
