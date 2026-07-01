@@ -68,7 +68,7 @@ export default function Login({ onLoginSuccess }) {
             LQ
           </div>
           <div>
-            <h2 className="text-xl font-bold text-gray-100 tracking-tight uppercase glow-accent">Kanpur LIQUOR ERP</h2>
+            <h2 className="text-xl font-bold text-gray-100 tracking-tight uppercase glow-accent">KANPUR LIQUOR ERP</h2>
             <p className="text-xs text-brand-textMuted font-medium uppercase tracking-wider">Business Intelligence Suite</p>
           </div>
         </div>
