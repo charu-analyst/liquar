@@ -16,7 +16,7 @@ export default function Inventory({ user, shops }) {
   const [showProductModal, setShowProductModal] = useState(false);
   const [editingProduct, setEditingProduct] = useState(null);
   const [prodForm, setProdForm] = useState({
-    brand_name: '', category: 'Whisky', size: '750ml', 
+    brand_name: '', category: 'Desi 36°', size: '90ml', 
     barcode: '', min_stock: 10, purchase_price: '', selling_price: '', opening_qty: 0
   });
 
@@ -131,7 +131,7 @@ export default function Inventory({ user, shops }) {
 
   const resetProductForm = () => {
     setProdForm({
-      brand_name: '', category: 'Whisky', size: '750ml', 
+      brand_name: '', category: 'Desi 36°', size: '90ml', 
       barcode: '', min_stock: 10, purchase_price: '', selling_price: '', opening_qty: 0
     });
   };
@@ -249,7 +249,7 @@ export default function Inventory({ user, shops }) {
           className="bg-brand-panelBg border border-brand-border text-gray-200 text-sm rounded-lg px-3 py-2 outline-none"
         >
           <option value="">All Categories</option>
-          {['Whisky', 'Beer', 'Rum', 'Vodka', 'Wine', 'Gin', 'Tequila'].map(cat => (
+          {['Desi 36°','Desi 42°','Whisky', 'Beer', 'Rum', 'Vodka', 'Wine', 'Gin', 'Tequila'].map(cat => (
             <option key={cat} value={cat}>{cat}</option>
           ))}
         </select>
@@ -368,7 +368,7 @@ export default function Inventory({ user, shops }) {
                     onChange={(e) => setProdForm({ ...prodForm, category: e.target.value })}
                     className="w-full bg-brand-panelBg border border-brand-border text-gray-200 text-xs rounded-lg p-2.5 outline-none"
                   >
-                    {['Whisky', 'Beer', 'Rum', 'Vodka', 'Wine', 'Gin', 'Tequila'].map(cat => (
+                    {['Desi 36°','Desi 42°', 'Beer', 'Rum', 'Vodka', 'Wine', 'Gin', 'Tequila','Whisky'].map(cat => (
                       <option key={cat} value={cat}>{cat}</option>
                     ))}
                   </select>
@@ -381,7 +381,7 @@ export default function Inventory({ user, shops }) {
                     onChange={(e) => setProdForm({ ...prodForm, size: e.target.value })}
                     className="w-full bg-brand-panelBg border border-brand-border text-gray-200 text-xs rounded-lg p-2.5 outline-none"
                   >
-                    {['180ml', '375ml', '650ml', '750ml', '1000ml'].map(sz => (
+                   {['90ml', '100ml', '200ml', '350ml', '700ml'].map(sz => (
                       <option key={sz} value={sz}>{sz}</option>
                     ))}
                   </select>
