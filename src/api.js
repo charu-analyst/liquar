@@ -1,4 +1,4 @@
-const API_BASE = 'https://liquar-backend.vercel.app/api';
+const API_BASE = 'https://liquarbackend.onrender.com/api';
 
 
 // Helper to get auth header
