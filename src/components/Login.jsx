@@ -68,7 +68,7 @@ export default function Login({ onLoginSuccess }) {
             LQ
           </div>
           <div>
-            <h2 className="text-xl font-bold text-gray-100 tracking-tight uppercase glow-accent">LIQUOR ERP</h2>
+            <h2 className="text-xl font-bold text-gray-100 tracking-tight uppercase glow-accent">Kanpur LIQUOR ERP</h2>
             <p className="text-xs text-brand-textMuted font-medium uppercase tracking-wider">Business Intelligence Suite</p>
           </div>
         </div>
@@ -185,7 +185,7 @@ export default function Login({ onLoginSuccess }) {
         )}
 
         <div className="text-center text-[10px] text-brand-textMuted pt-4 border-t border-brand-border/40">
-          Liquor ERP Suite • Version 1.0.0 (Secure)
+         Kanpur Liquor ERP Suite • Version 1.0.0 (Secure)
         </div>
       </div>
     </div>

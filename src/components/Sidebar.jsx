@@ -49,7 +49,7 @@ export default function Sidebar({ currentTab, setCurrentTab, user, onLogout, the
         <div className="hidden lg:flex items-center space-x-3 px-6 py-6 border-b border-brand-border">
           <div className="w-10 h-10 rounded-lg bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center font-bold text-white tracking-widest shadow-lg shadow-blue-500/20">LQ</div>
           <div>
-            <h1 className="font-bold text-base text-gray-100 tracking-wide glow-accent">LIQUOR ERP</h1>
+            <h1 className="font-bold text-base text-gray-100 tracking-wide glow-accent">Kanpur LIQUOR ERP</h1>
             <p className="text-[10px] text-brand-textMuted tracking-wider font-semibold uppercase">Business Suite</p>
           </div>
         </div>
