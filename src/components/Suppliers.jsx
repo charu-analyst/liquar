@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { api } from '../api';
 import { 
   Handshake, Plus, Calendar, CreditCard, 
-  RefreshCw, Check, AlertTriangle, ChevronRight, ArrowLeft 
+  RefreshCw, Check, AlertTriangle, ChevronRight, ArrowLeft ,X
 } from 'lucide-react';
 
 export default function Suppliers({ user, shops }) {
