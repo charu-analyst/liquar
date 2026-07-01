@@ -381,7 +381,7 @@ export default function Inventory({ user, shops }) {
                     onChange={(e) => setProdForm({ ...prodForm, size: e.target.value })}
                     className="w-full bg-brand-panelBg border border-brand-border text-gray-200 text-xs rounded-lg p-2.5 outline-none"
                   >
-                   {['90ml', '100ml', '200ml', '350ml', '700ml'].map(sz => (
+                   {['90ml', '100ml','180ml' ,'200ml', '375ml', '750ml'].map(sz => (
                       <option key={sz} value={sz}>{sz}</option>
                     ))}
                   </select>
